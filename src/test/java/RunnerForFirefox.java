@@ -15,5 +15,6 @@ public class RunnerForFirefox {
         AddressModule.addressCreating(driver);
         AddressEditModule.addressEditing(driver);
         DelAndLogout.addressDeleting (driver);
+
     }
 }
