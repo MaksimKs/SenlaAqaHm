@@ -9,7 +9,6 @@ class AddressModule {
         //create new address
         driver.findElement(By.xpath("//a[@href=\"/addresses\"]")).click();
         driver.findElement(By.xpath("//a[@data-test=\"create\"]")).click();
-
         //filling the forms
         driver.findElement(By.id("address_first_name")).sendKeys("Sam");
         driver.findElement(By.id("address_last_name")).sendKeys("Senioro");
