@@ -4,11 +4,13 @@ import org.openqa.selenium.WebDriver;
 import java.io.File;
 
 class AddressModule {
-    //action with address (filling the forms)
+    //action with address
     static void addressCreating(WebDriver driver) {
+        //create new address
         driver.findElement(By.xpath("//a[@href=\"/addresses\"]")).click();
         driver.findElement(By.xpath("//a[@data-test=\"create\"]")).click();
 
+        //filling the forms
         driver.findElement(By.id("address_first_name")).sendKeys("Sam");
         driver.findElement(By.id("address_last_name")).sendKeys("Senioro");
         driver.findElement(By.id("address_street_address")).sendKeys("Central st.");
@@ -18,7 +20,6 @@ class AddressModule {
         driver.findElement(By.id("address_zip_code")).sendKeys("07740");
         driver.findElement(By.xpath("//input[@id=\"address_country_us\" and @value=\"us\"]")).click();
         driver.findElement(By.xpath("//input[@name=\"address[birthday]\"]")).sendKeys("05101986");
-
         driver.findElement(By.xpath("//input[@id=\"address_color\"]")).sendKeys("#0060df");
         driver.findElement(By.id("address_age")).sendKeys("28");
         driver.findElement(By.xpath("//input[@id=\"address_website\"]")).sendKeys("http://www.random.com");
